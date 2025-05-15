@@ -6,12 +6,14 @@ const PORT = 5000;
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(cors({ origin: "https://your-vercel-app.vercel.app" }));
 
 // Dummy user for login
 const user = {
   username: "indra",
   password: "123",
 };
+
 
 // Login endpoint
 app.post("/api/login", (req, res) => {
