@@ -1,0 +1,64 @@
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to top right, #f2cbe2, #e7f0ff);
+    height: 100vh;
+  }
+  
+  /* Centering the form */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Styling the form */
+  .login-form {
+    background-color: black;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f4eeee;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #377dff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .login-form button:hover {
+    background-color: #1a5bcb;
+  }
+  
+  .error-message {
+    margin-top: 12px;
+    color: red;
+    font-size: 13px;
+    text-align: center;
+  }
+  
