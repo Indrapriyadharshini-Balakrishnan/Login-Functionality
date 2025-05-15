@@ -7,18 +7,15 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
 
-  const API=process.env.REACT_APP_API_URL
-
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`${API}/api/login`, {
+      const res = await axios.post("https://login-functionality-d5g8.onrender.com/api/login", {
         username,
         password,
       });
       setMessage(res.data.message);
     } catch (err) {
-      console.log(err)
       setMessage(err.response?.data?.message || "Login failed");
     }
   };
