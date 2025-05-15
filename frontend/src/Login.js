@@ -10,7 +10,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://your-backend-url/api/login", {
+      const res = await axios.post("https://login-functionality-d5g8.onrender.com", {
         username,
         password,
       });
